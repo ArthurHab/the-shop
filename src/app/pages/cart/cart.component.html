@@ -1,7 +1,9 @@
-<div *ngFor="let item of cartData">
-    <app-product-cart [product]="item" (updateEvent)="updateCartValue()"/>
-</div>
-<div>
-    <p>Total: {{cartValue}}</p>
-    <a><button routerLink="/cart/payment" class="button">Payment</button></a>
-</div>
+<section class="productCart">
+    <div class="productCartItems">
+        <app-product-cart *ngFor="let item of cartData" [product]="item" (updateEvent)="getCartData()"/>
+    </div>
+    <div class="productCartValue">
+        <span class="productCartTotal">Total: R$ {{cartValue}}</span>
+        <a><button routerLink="/cart/payment" class="button">Payment</button></a>
+    </div>
+</section>

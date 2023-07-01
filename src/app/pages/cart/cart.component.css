@@ -1,0 +1,21 @@
+.productCart{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.productCartItems{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productCartValue{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productCartTotal{
+    font-size: 20px;
+}

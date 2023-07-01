@@ -1,3 +1,19 @@
 .productCart{
     display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.infoProductCart{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+}
+.infoProductCartButtons{
+    display: flex;
+    gap: 5px;
 }

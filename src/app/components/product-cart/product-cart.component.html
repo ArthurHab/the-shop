@@ -1,10 +1,11 @@
-<section class="productCart" *ngIf="product.quant > 0">
-    <div>
-        <p>Nome: {{product.product.name}}</p>
-        <p>Preço: R$ {{product.product.price * product.quant}}</p>
-        <p>Quantidade: {{product.quant}}</p>
+<section class="productCart">
+    <img src="{{product.product.imageUrl}}" alt="" height="50">
+    <div class="infoProductCart">
+        <span>Nome: {{product.product.name}}</span>
+        <span>Preço: R$ {{product.product.price * product.quant}}</span>
+        <span>Quantidade: {{product.quant}}</span>
     </div>
-    <div>
+    <div class="infoProductCartButtons">
         <button class="button" (click)="addProduct()">+</button>
         <button class="button" (click)="subProduct()">-</button>
     </div>

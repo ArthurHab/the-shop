@@ -35,8 +35,8 @@ export class CartService {
     let itemFound = this.dataCart.find((item) => item.product.id === product.id);
 
     if(itemFound != undefined){
-      if(itemFound.quant < 1){
-        this.dataCart = this.dataCart.filter((item) => item.product.id !== product.id);
+      if(itemFound.quant < 2){
+        this.dataCart = this.dataCart.filter((item) => item.product.id != product.id);
       } else{
         this.dataCart.map((item) => {
           if(item.product.id === product.id){
