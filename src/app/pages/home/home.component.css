@@ -15,3 +15,12 @@
     border-radius: 10px;
 }
 
+@media screen and (max-width: 730px) {
+    .image{
+        display: none;
+    }
+    .homeContent{
+        gap: 0px;
+        padding: 0px 20px;
+    }   
+}

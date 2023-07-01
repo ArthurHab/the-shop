@@ -9,3 +9,20 @@
     list-style: none;
 }
 
+.navBarMobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .navBar{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .navBarMobile{
+        display: none;
+    }
+}

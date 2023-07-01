@@ -10,10 +10,17 @@
 .infoProductCart{
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 5px;
     justify-content: center;
 }
 .infoProductCartButtons{
     display: flex;
     gap: 5px;
+}
+
+@media screen and (max-width: 380px) {
+    .productCart{
+        gap: 10px;
+        padding: 10px;
+    }
 }
