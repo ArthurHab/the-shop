@@ -26,14 +26,14 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-color: rgba(248, 0, 0, 0.761);
+    background-color: rgba(207, 10, 10, 0.761);
     border: none;
     text-align: center;
 }
 
 .routerMobileMenu{
     margin: 50px;
-    font-size: 50px;
+    font-size: 35px;
     display: flex;
     flex-direction: column;
     gap: 50px;
