@@ -1,0 +1,28 @@
+.productsContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0px;
+}
+
+.productsContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 60vw;
+}
+
+.categorieList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorieListItem{
+    list-style: none;
+    margin-top: 10px;
+    text-transform: capitalize;
+}

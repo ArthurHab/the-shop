@@ -1,0 +1,23 @@
+.aboutContainer{
+    max-width: 60vw;
+}
+
+.cardAbout{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 18px;
+    text-align:justify;
+}
+
+.cardTextContent{
+    display: flex;
+    flex-direction: column;
+    gap: 50px
+}
+
+.cardImage{
+    border-radius: 10px;
+}

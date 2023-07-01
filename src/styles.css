@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(163, 5, 5);
+}
+
+.routerLink{
+    text-decoration: none;
+    color: black;
+}
+
+.colorRed{
+    color: red;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.fontSizeTwentysix{
+    font-size: 26px;
+}
+
+.fontSizetwenty{
+    font-size: 20px;
+}

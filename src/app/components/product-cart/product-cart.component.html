@@ -1,0 +1,11 @@
+<section class="productCart" *ngIf="product.quant > 0">
+    <div>
+        <p>Nome: {{product.product.name}}</p>
+        <p>Preço: R$ {{product.product.price * product.quant}}</p>
+        <p>Quantidade: {{product.quant}}</p>
+    </div>
+    <div>
+        <button class="button" (click)="addProduct()">+</button>
+        <button class="button" (click)="subProduct()">-</button>
+    </div>
+</section>

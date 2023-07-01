@@ -1,0 +1,8 @@
+<section class="productContent">
+    <img src="{{product.imageUrl}}" alt="" class="productImage">
+    <span class="productName bold">{{product.name}}</span>
+    <span class="productPrice bold">R$ {{product.price}},00</span>
+    <span>{{product.category}}</span>
+    <app-star-rating [rating]="product.rating"></app-star-rating>
+    <a routerLink="/product/{{product.id}}" class="routerLink"><button class="button">Buy</button></a>
+</section>

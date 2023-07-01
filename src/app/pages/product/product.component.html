@@ -1,0 +1,13 @@
+<section *ngIf="!!product; else productNotFound">
+    <p>{{product.id}}</p>
+    <p>{{product.name}}</p>
+    <p>{{product.price}}</p>
+    <p>{{product.description}}</p>
+    <a routerLink="/cart"><button class="button" (click)="handleClick()">Add to cart</button></a>
+</section>
+
+<ng-template #productNotFound>
+    <span>This Product dont exits!</span>
+</ng-template>
+
+

@@ -1,0 +1,11 @@
+<div class="productsContainer">
+    <section class="productsCategories">
+        <span class="categorieTitle fontSizetwenty bold">Categorias</span>
+        <ul class="categorieList">
+            <li *ngFor="let categorie of categories" class="categorieListItem"><a routerLink="/products/{{categorie}}" class="routerLink">{{categorie}}</a></li>
+        </ul>
+    </section>
+    <section class="productsContent" >
+        <app-product-card *ngFor="let product of products" [product]="product"></app-product-card>
+    </section>
+</div>
