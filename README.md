@@ -1,27 +1,43 @@
-# TheShop
+﻿<h1 align="center">
+  The Shop
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-executando-a-aplicação">Executando a aplicação</a>
+</p>
 
-## Development server
+## 🚀 Tecnologias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-## Code scaffolding
+- [Angular](https://angular.io/)    <img align="center" alt="Arthur-Angularjs" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [TypeScript](https://www.javascript.com/)    <img align="center" alt="Arthur-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 
-## Build
+## 💻 Projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The Shop é um projeto no qual permite ao usuário ter um local seguro e bem estruturado para que possa realizar a compras de vários produtos, que estão organizados por categoria.
 
-## Running unit tests
+## ✨ Layout
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p align="center">
+  <img alt="layout" src="./github/assets/layout.jpeg">
+</p>
 
-## Running end-to-end tests
+## 🔖 Como executar
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Clone o repositório
+- Instale as dependências com `npm`
+- Inicie o servidor com `npm run dev`
 
-## Further help
+Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🎬 Executando a aplicação
+
+<p align="center">
+  <img alt="layout" src="./github/assets/video.gif">
+</p>
