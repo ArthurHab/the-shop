@@ -1,9 +1,11 @@
-<section *ngIf="!!product; else productNotFound">
-    <p>{{product.id}}</p>
-    <p>{{product.name}}</p>
-    <p>{{product.price}}</p>
-    <p>{{product.description}}</p>
-    <a routerLink="/cart"><button class="button" (click)="handleClick()">Add to cart</button></a>
+<section *ngIf="!!product; else productNotFound" class="productCardInfo">
+    <img src="{{product.imageUrl}}" alt="" class="imageProduct">
+    <div class="informationsProduct">
+        <p>{{product.name}}</p>
+        <p class="productPrice bold">R$ {{product.price}},00</p>
+        <p>{{product.description}}</p>
+        <a routerLink="/cart"><button class="button" (click)="handleClick()">Add to cart</button></a>
+    </div>
 </section>
 
 <ng-template #productNotFound>

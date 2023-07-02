@@ -4,5 +4,18 @@
     <span class="productPrice bold">R$ {{product.price}},00</span>
     <span>{{product.category}}</span>
     <app-star-rating [rating]="product.rating"></app-star-rating>
-    <a routerLink="/product/{{product.id}}" class="routerLink"><button class="button">Buy</button></a>
+    <div class="productActions">
+        <a routerLink="/product/{{product.id}}" class="routerLink"><button class="button">Buy</button></a>
+        <div (click)="addToCart()">
+            <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            width="30px" height="30px" viewBox="0 0 32 32" xml:space="preserve">
+           <style type="text/css">
+               .sharpcorners_eenn{fill:#43c652;}
+               .st0{fill:#0b190d;}
+           </style>
+           <path class="sharpcorners_eenn" d="M10,27h4c0,1.105-0.895,2-2,2S10,28.105,10,27z M23,29c1.105,0,2-0.895,2-2h-4
+               C21,28.105,21.895,29,23,29z M30,9H6.819l-1-5H2v2h2.181l4,20H26v-2H9.819l-0.6-3H26L30,9z"/>
+           </svg>
+        </div>
+    </div>
 </section>

@@ -6,13 +6,14 @@
     gap: 10px;
 }
 
-.productPrice{
-    color: green;
-    font-size: 18px;
-}
-
 .productImage{
     height: 200px;
     width: 200px;
     border-radius: 10px;
+}
+
+.productActions{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }

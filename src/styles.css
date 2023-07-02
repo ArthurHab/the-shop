@@ -8,6 +8,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    font-family:'Roboto', sans-serif;
 }
 
 .button{
@@ -43,4 +44,9 @@ body {
 
 .fontSizetwenty{
     font-size: 20px;
+}
+
+.productPrice{
+    color: green;
+    font-size: 18px;
 }

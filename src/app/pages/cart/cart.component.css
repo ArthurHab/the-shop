@@ -1,6 +1,6 @@
 .productCart{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
 }
 
@@ -18,4 +18,11 @@
 
 .productCartTotal{
     font-size: 20px;
+}
+
+@media screen and (max-width: 650px){
+    .productCart{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }

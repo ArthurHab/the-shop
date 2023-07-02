@@ -44,11 +44,23 @@
     color: white;
 }
 
+.numberOfCartProducts{
+    position: relative;
+    bottom: 25px;
+    left: 35px;
+    color: red;
+}
+
 
 
 @media screen and (max-width: 600px) {
     .navBar{
         display: none;
+    }
+    .numberOfCartProducts{
+        position: relative;
+        bottom: 25px;
+        left: 100px;
     }
 }
 

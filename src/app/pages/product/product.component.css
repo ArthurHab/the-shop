@@ -1,0 +1,34 @@
+.productCardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.informationsProduct{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.imageProduct{
+    height: 200px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 700px){
+    .productCardInfo{
+        flex-direction: row;
+        padding: 50px;
+        gap: 50px;
+    }
+    .imageProduct{
+        height: 300px;
+    }
+}
