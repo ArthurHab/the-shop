@@ -25,16 +25,16 @@ The Shop é um projeto no qual permite ao usuário ter um local seguro e bem est
 ## ✨ Layout
 
 <p align="center">
-  <img alt="layout" src="./github/assets/layout.jpeg">
+  <img alt="layout" src="./github/assets/layout.png">
 </p>
 
 ## 🔖 Como executar
 
 - Clone o repositório
 - Instale as dependências com `npm`
-- Inicie o servidor com `npm run dev`
+- Inicie o servidor com `npm run start`
 
-Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
+Agora você pode acessar [`localhost:4200`](http://localhost:4200) do seu navegador.
 
 ## 🎬 Executando a aplicação
 
