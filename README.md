@@ -41,3 +41,9 @@ Agora você pode acessar [`localhost:4200`](http://localhost:4200) do seu navega
 <p align="center">
   <img alt="layout" src="./github/assets/video.gif">
 </p>
+
+## 📱 Resposividade Mobile
+
+<p align="center">
+  <img alt="layout" src="./github/assets/video2.gif">
+</p>
