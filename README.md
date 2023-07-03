@@ -7,7 +7,8 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-executando-a-aplicação">Executando a aplicação</a>
+  <a href="#-executando-a-aplicação">Executando a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-responsividade-mobile">Responsividade Mobile</a>
 </p>
 
 ## 🚀 Tecnologias
@@ -42,7 +43,7 @@ Agora você pode acessar [`localhost:4200`](http://localhost:4200) do seu navega
   <img alt="layout" src="./github/assets/video.gif">
 </p>
 
-## 📱 Resposividade Mobile
+## 📱 Responsividade Mobile
 
 <p align="center">
   <img alt="layout" src="./github/assets/video2.gif">
