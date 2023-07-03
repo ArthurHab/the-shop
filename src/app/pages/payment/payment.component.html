@@ -1,1 +1,55 @@
-<p>payment works!</p>
+<section class="paymentContainer">
+    <section *ngIf="products.length > 0 ; else DoesntHaveProductInTheCart">
+        <section class="paymentForm">
+            <span>Payment</span>
+            <button class="button" (click)="handleClick()" *ngIf="!showPayment">Let's go</button>
+            <span>Basic User Infos</span>
+            <section class="basicUserInfos" *ngIf="!!showPayment">
+                <div class="formInputs">
+                    <span>Name</span>
+                    <input type="text" name="name" id="name" class="inputStyle" [(ngModel)]="userPayment.name">
+                </div>
+                <div class="formInputs" *ngIf="userPayment.name.length > 0">
+                    <span>Birthday</span>
+                    <input type="date" name="birthday" id="birthday" class="inputStyle" [(ngModel)]="userPayment.birthday">
+                </div>
+                <div class="formInputs" *ngIf="userPayment.birthday.length > 0">
+                    <span>CPF</span>
+                    <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="000.000.000-00" class="inputStyle" [(ngModel)]="userPayment.cpf">    
+                </div>
+            </section>
+            <span>Adress Infos</span>
+            <section class="adressUserInfos" *ngIf="userPayment.cpf.length > 0">
+                <div class="formInputs">
+                    <span>CEP</span>
+                    <input type="text" name="cep" id="cep" maxlength="8" placeholder="00000-000" class="inputStyle" [(ngModel)]="userPayment.cep">
+                </div>
+                <div class="formInputs" *ngIf="userPayment.cep.length > 0">
+                    <span>Street name</span>
+                    <input type="text" name="streeName" id="streetName" class="inputStyle" [(ngModel)]="userPayment.street">
+                </div>
+                <div class="formInputs" *ngIf="userPayment.street.length > 0">
+                    <span>Number house</span>
+                    <input type="text" name="numberHouse" id="numberHouse" class="inputStyle" [(ngModel)]="userPayment.numberHouse">
+                </div>
+                </section>
+            <span>Review products</span>
+            <section class="reviewProducts" *ngIf="userPayment.numberHouse.length > 0">
+                <div class="miniCardReviewProduct" *ngFor="let item of products">
+                    <span>Name: {{item.product.name}}</span>
+                    <span>Itens number: {{item.quant}}</span>
+                    <span>Total value: R$ {{item.product.price * item.quant}},00</span>
+                </div>
+            </section>
+            <section class="paymentMethod" *ngIf="userPayment.numberHouse.length > 0">
+                <span>Method payment</span>
+            </section>
+            <button class="button" *ngIf="userPayment.numberHouse.length > 0">Finish purchase</button>
+        </section>
+    </section>
+    <ng-template #DoesntHaveProductInTheCart>
+        <span>Doesn't have products in your Cart!</span>
+        <span>Back to products and be happy</span>
+        <a routerLink="/products/all"><button class="button">Products</button></a>
+    </ng-template>
+</section>

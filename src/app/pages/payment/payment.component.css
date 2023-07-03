@@ -1,0 +1,47 @@
+.paymentContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.paymentForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.basicUserInfos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.adressUserInfos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.reviewProducts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.miniCardReviewProduct{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 12px;
+}
+
+.inputStyle{
+    border-radius: 5px;
+    padding: 10px;
+    border: 0.5px solid rgb(164, 164, 164);
+}
+
+.formInputs{
+    display: flex;
+    flex-direction: column;
+}
