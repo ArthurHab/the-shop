@@ -40,6 +40,7 @@
                     <span>Itens number: {{item.quant}}</span>
                     <span>Total value: R$ {{item.product.price * item.quant}},00</span>
                 </div>
+                <a routerLink="/cart" class="routerLink"><button class="button">Change Product?</button></a>
             </section>
             <section class="paymentMethod" *ngIf="userPayment.numberHouse.length > 0">
                 <span>Method payment</span>
