@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { MessagesService } from 'src/app/messages/messages.service';
 import { Product } from 'src/app/models/product.model';
 import { CartService } from 'src/app/services/cart/cart.service';
 import { ProductsService } from 'src/app/services/products/products.service';
@@ -19,12 +20,14 @@ export class ProductComponent {
 
   handleClick = async() => {
     this.cartService.addToCart(this.product!);
+    this.messageService.setMessage(this.product?.name + ' Add!');
   }
 
   constructor(
     private cartService: CartService,
     private productsServices: ProductsService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private messageService: MessagesService
   ){}
 
   ngOnInit(){
