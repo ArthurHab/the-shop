@@ -29,6 +29,7 @@
     background-color: rgba(207, 10, 10, 0.761);
     border: none;
     text-align: center;
+    z-index: 1;
 }
 
 .routerMobileMenu{

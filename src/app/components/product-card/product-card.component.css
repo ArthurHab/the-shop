@@ -17,3 +17,7 @@
     flex-direction: row;
     gap: 30px;
 }
+
+.svgAction:hover{
+    cursor: pointer;
+}

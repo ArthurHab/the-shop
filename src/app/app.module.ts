@@ -19,6 +19,7 @@ import { StarRatingComponent } from './components/star-rating/star-rating.compon
 import { CartComponent } from './pages/cart/cart.component';
 import { ProductCartComponent } from './components/product-cart/product-cart.component';
 import { PaymentComponent } from './pages/payment/payment.component';
+import { MessagesComponent } from './components/messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PaymentComponent } from './pages/payment/payment.component';
     ProductComponent,
     CartComponent,
     ProductCartComponent,
-    PaymentComponent
+    PaymentComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

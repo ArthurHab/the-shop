@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { MessagesService } from 'src/app/messages/messages.service';
 import { Product } from 'src/app/models/product.model';
 import { CartService } from 'src/app/services/cart/cart.service';
 
@@ -12,9 +13,11 @@ export class ProductCardComponent {
 
   addToCart = async () => {
     this.cartService.addToCart(this.product);
+    this.messageService.setMessage(this.product.name + ' Add!');
   }
 
   constructor(
-    private cartService: CartService
+    private cartService: CartService,
+    private messageService: MessagesService
   ){}
 }

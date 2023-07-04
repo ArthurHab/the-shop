@@ -12,6 +12,8 @@
     flex-direction: column;
     gap: 5px;
     justify-content: center;
+    width: 130px;
+    text-align: center;
 }
 .infoProductCartButtons{
     display: flex;
