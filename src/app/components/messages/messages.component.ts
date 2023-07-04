@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MessagesService } from 'src/app/messages/messages.service';
+import { MessagesService } from 'src/app/services/messages/messages.service';
 import { Observable, delay, of } from 'rxjs';
 
 @Component({

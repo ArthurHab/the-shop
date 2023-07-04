@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MessagesService } from 'src/app/messages/messages.service';
+import { MessagesService } from 'src/app/services/messages/messages.service';
 import { Product } from 'src/app/models/product.model';
 import { CartService } from 'src/app/services/cart/cart.service';
 
