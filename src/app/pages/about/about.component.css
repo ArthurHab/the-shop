@@ -1,5 +1,6 @@
 .aboutContainer{
     max-width: 60vw;
+    margin: 50px 0px;
 }
 
 .cardAbout{
@@ -15,9 +16,16 @@
 .cardTextContent{
     display: flex;
     flex-direction: column;
-    gap: 50px
+    gap: 50px;
+    min-width: 300px;
 }
 
 .cardImage{
     border-radius: 10px;
+}
+
+@media screen and (max-width: 710px){
+    .cardAbout{
+        flex-direction: column-reverse;
+    }
 }
