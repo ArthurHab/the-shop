@@ -20,6 +20,18 @@
     gap: 5px;
 }
 
+.productNameCart{
+    font-size: 1rem;
+}
+
+.productPriceCart{
+    font-size: 1rem;
+}
+
+.productQuantCart{
+    font-size: 1rem;
+}
+
 @media screen and (max-width: 380px) {
     .productCart{
         gap: 10px;

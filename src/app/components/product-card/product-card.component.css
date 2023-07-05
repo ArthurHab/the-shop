@@ -21,3 +21,17 @@
 .svgAction:hover{
     cursor: pointer;
 }
+
+.productName{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.productPrice{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.productCategory{
+    font-size: 1rem;
+}

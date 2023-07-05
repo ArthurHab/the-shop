@@ -22,6 +22,23 @@
     border-radius: 10px;
 }
 
+.productName{
+    font-size: 1.5rem;
+}
+
+.productPrice{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.productDescription{
+    font-size: 1.2rem;
+}
+
+.productDontExists{
+    font-size: 2rem;
+}
+
 @media screen and (min-width: 700px){
     .productCardInfo{
         flex-direction: row;

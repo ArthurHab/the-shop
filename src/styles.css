@@ -9,6 +9,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     font-family:'Roboto', sans-serif;
+    font-size: 12px;
 }
 
 .button{
@@ -32,21 +33,4 @@ body {
 
 .colorRed{
     color: red;
-}
-
-.bold{
-    font-weight: bold;
-}
-
-.fontSizeTwentysix{
-    font-size: 26px;
-}
-
-.fontSizetwenty{
-    font-size: 20px;
-}
-
-.productPrice{
-    color: green;
-    font-size: 18px;
 }

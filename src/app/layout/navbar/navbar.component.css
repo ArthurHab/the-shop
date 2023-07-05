@@ -7,6 +7,12 @@
 
 .routerItem{
     list-style: none;
+    font-size: 1rem;
+}
+
+.routerItemMobile{
+    list-style: none;
+    font-size: 2rem;
 }
 
 .navBarMobile{

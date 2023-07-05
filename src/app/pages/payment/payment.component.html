@@ -1,9 +1,9 @@
 <section class="paymentContainer">
     <section *ngIf="products.length > 0 ; else DoesntHaveProductInTheCart">
         <section class="paymentForm">
-            <span>Payment</span>
+            <span class="paymentTitle">Payment</span>
             <button class="button" (click)="handleClick()" *ngIf="!showPayment">Let's go</button>
-            <span>Basic User Infos</span>
+            <span class="formPaymentBlock">Basic User Infos</span>
             <section class="basicUserInfos" *ngIf="!!showPayment">
                 <div class="formInputs">
                     <span>Name</span>
@@ -18,7 +18,7 @@
                     <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="000.000.000-00" class="inputStyle" [(ngModel)]="userPayment.cpf">    
                 </div>
             </section>
-            <span>Adress Infos</span>
+            <span class="formPaymentBlock">Adress Infos</span>
             <section class="adressUserInfos" *ngIf="userPayment.cpf.length > 0">
                 <div class="formInputs">
                     <span>CEP</span>
@@ -33,24 +33,24 @@
                     <input type="text" name="numberHouse" id="numberHouse" class="inputStyle" [(ngModel)]="userPayment.numberHouse">
                 </div>
                 </section>
-            <span>Review products</span>
+            <span class="formPaymentBlock">Review products</span>
             <section class="reviewProducts" *ngIf="userPayment.numberHouse.length > 0">
                 <div class="miniCardReviewProduct" *ngFor="let item of products">
-                    <span>Name: {{item.product.name}}</span>
-                    <span>Itens number: {{item.quant}}</span>
-                    <span>Total value: R$ {{item.product.price * item.quant}},00</span>
+                    <span class="miniCardReviewProductText">Name: {{item.product.name}}</span>
+                    <span class="miniCardReviewProductText">Itens number: {{item.quant}}</span>
+                    <span class="miniCardReviewProductText">Total value: R$ {{item.product.price * item.quant}},00</span>
                 </div>
                 <a routerLink="/cart" class="routerLink"><button class="button">Change Product?</button></a>
             </section>
             <section class="paymentMethod" *ngIf="userPayment.numberHouse.length > 0">
-                <span>Method payment</span>
+                <span class="formPaymentBlock">Method payment</span>
             </section>
             <button class="button" *ngIf="userPayment.numberHouse.length > 0">Finish purchase</button>
         </section>
     </section>
     <ng-template #DoesntHaveProductInTheCart>
-        <span>Doesn't have products in your Cart!</span>
-        <span>Back to products and be happy</span>
+        <span class="doesntTextProduc">Doesn't have products in your Cart!</span>
+        <span class="doesntTextProduc">Back to products and be happy</span>
         <a routerLink="/products/all"><button class="button">Products</button></a>
     </ng-template>
 </section>

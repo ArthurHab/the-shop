@@ -1,9 +1,9 @@
 <section class="productCart">
     <img src="{{product.product.imageUrl}}" alt="" height="50">
     <div class="infoProductCart">
-        <span>Nome: {{product.product.name}}</span>
-        <span>Preço: R$ {{product.product.price * product.quant}}</span>
-        <span>Quantidade: {{product.quant}}</span>
+        <span class="productNameCart">Nome: {{product.product.name}}</span>
+        <span class="productPriceCart">Preço: R$ {{product.product.price * product.quant}}</span>
+        <span class="productQuantCart">Quantidade: {{product.quant}}</span>
     </div>
     <div class="infoProductCartButtons">
         <button class="button" (click)="addProduct()">+</button>

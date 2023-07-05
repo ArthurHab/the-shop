@@ -24,6 +24,13 @@
     border-radius: 10px;
 }
 
+.cardTextContentnormal{
+    font-size: 1rem;
+}
+
+.cardTextContentBigger{
+    font-size: 1.5rem;
+}
 @media screen and (max-width: 710px){
     .cardAbout{
         flex-direction: column-reverse;

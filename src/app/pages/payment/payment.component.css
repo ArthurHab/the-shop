@@ -50,3 +50,20 @@
     display: flex;
     flex-direction: column;
 }
+
+.paymentTitle{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.formPaymentBlock{
+    font-size: 1rem;
+}
+
+.doesntTextProduc{
+    font-size: 1rem;
+}
+
+.miniCardReviewProductText{
+    font-size: 0.8rem;
+}

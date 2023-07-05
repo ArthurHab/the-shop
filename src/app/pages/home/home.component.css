@@ -5,7 +5,7 @@
     gap: 50px;
 }
 
-.textContainer{
+.textContainerHome{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -13,6 +13,14 @@
 
 .image{
     border-radius: 10px;
+}
+
+.titleHome{
+    font-size: 2rem;
+}
+
+.descriptionHome{
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 730px) {

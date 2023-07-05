@@ -1,15 +1,15 @@
 <section *ngIf="!!product; else productNotFound" class="productCardInfo">
     <img src="{{product.imageUrl}}" alt="" class="imageProduct">
     <div class="informationsProduct">
-        <p>{{product.name}}</p>
-        <p class="productPrice bold">R$ {{product.price}},00</p>
-        <p>{{product.description}}</p>
+        <p class="productName">{{product.name}}</p>
+        <p class="productPrice">R$ {{product.price}},00</p>
+        <p class="productDescription">{{product.description}}</p>
         <a routerLink="/cart"><button class="button" (click)="handleClick()">Add to cart</button></a>
     </div>
 </section>
 
 <ng-template #productNotFound>
-    <span>This Product dont exits!</span>
+    <span class="productDontExists">This Product dont exits!</span>
 </ng-template>
 
 
