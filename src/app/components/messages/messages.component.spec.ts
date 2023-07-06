@@ -15,7 +15,7 @@ describe('MessagesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create app-messages', () => {
     expect(component).toBeTruthy();
   });
 });

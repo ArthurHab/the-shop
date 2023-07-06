@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterOutlet } from '@angular/router';
 import { ContentComponent } from './content.component';
 
 describe('ContentComponent', () => {
@@ -8,6 +8,7 @@ describe('ContentComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
+        imports: [RouterOutlet],
       declarations: [ContentComponent]
     });
     fixture = TestBed.createComponent(ContentComponent);
@@ -15,7 +16,12 @@ describe('ContentComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create app-content', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have router-outlet inside app-content', () => {
+    const routerOutletComponent = fixture.nativeElement.querySelector('router-outlet');
+    expect(routerOutletComponent).toBeTruthy();
+  })
 });

@@ -15,7 +15,7 @@ describe('StarRatingComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create app-star-rating', () => {
     expect(component).toBeTruthy();
   });
 });

@@ -15,7 +15,7 @@ describe('NavbarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create app-navbar', () => {
     expect(component).toBeTruthy();
   });
 });
