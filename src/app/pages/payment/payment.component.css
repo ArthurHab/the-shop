@@ -1,29 +1,29 @@
-.paymentContainer{
+.payment__container{
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 50px 0px;
 }
 
-.paymentForm{
+.payment__form{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.basicUserInfos{
+.payment__user{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.adressUserInfos{
+.payment__adress{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.reviewProducts{
+.payment__review{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -32,7 +32,7 @@
     border-radius: 10px;
 }
 
-.miniCardReviewProduct{
+.payment__review__card{
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -40,30 +40,30 @@
     border-bottom: 1px solid red;
 }
 
-.inputStyle{
+.payment__input__style{
     border-radius: 5px;
     padding: 10px;
     border: 0.5px solid rgb(164, 164, 164);
 }
 
-.formInputs{
+.payment__input{
     display: flex;
     flex-direction: column;
 }
 
-.paymentTitle{
+.payment__title{
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.formPaymentBlock{
+.payment__block{
     font-size: 1rem;
 }
 
-.doesntTextProduc{
+.payment__doesnt{
     font-size: 1rem;
 }
 
-.miniCardReviewProductText{
+.payment__review__text{
     font-size: 0.8rem;
 }

@@ -1,33 +1,33 @@
-.homeContent{
+.home{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
 }
 
-.textContainerHome{
+.home__card{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.image{
+.home__image{
     border-radius: 10px;
 }
 
-.titleHome{
+.home__title{
     font-size: 2rem;
 }
 
-.descriptionHome{
+.home__description{
     font-size: 1rem;
 }
 
 @media screen and (max-width: 730px) {
-    .image{
+    .home__image{
         display: none;
     }
-    .homeContent{
+    .home__card{
         gap: 0px;
         padding: 0px 20px;
     }   

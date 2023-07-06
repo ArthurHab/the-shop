@@ -1,56 +1,56 @@
-<section class="paymentContainer">
+<section class="payment__container">
     <section *ngIf="products.length > 0 ; else DoesntHaveProductInTheCart">
-        <section class="paymentForm">
-            <span class="paymentTitle">Payment</span>
+        <section class="payment__form">
+            <span class="payment__title">Payment</span>
             <button class="button" (click)="handleClick()" *ngIf="!showPayment">Let's go</button>
-            <span class="formPaymentBlock">Basic User Infos</span>
-            <section class="basicUserInfos" *ngIf="!!showPayment">
-                <div class="formInputs">
+            <span class="payment__block">Basic User Infos</span>
+            <section class="payment__user" *ngIf="!!showPayment">
+                <div class="payment__input">
                     <span>Name</span>
-                    <input type="text" name="name" id="name" class="inputStyle" [(ngModel)]="userPayment.name">
+                    <input type="text" name="name" id="name" class="payment__input__style" [(ngModel)]="userPayment.name">
                 </div>
-                <div class="formInputs" *ngIf="userPayment.name.length > 0">
+                <div class="payment__input" *ngIf="userPayment.name.length > 0">
                     <span>Birthday</span>
-                    <input type="date" name="birthday" id="birthday" class="inputStyle" [(ngModel)]="userPayment.birthday">
+                    <input type="date" name="birthday" id="birthday" class="payment__input__style" [(ngModel)]="userPayment.birthday">
                 </div>
-                <div class="formInputs" *ngIf="userPayment.birthday.length > 0">
+                <div class="payment__input" *ngIf="userPayment.birthday.length > 0">
                     <span>CPF</span>
-                    <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="000.000.000-00" class="inputStyle" [(ngModel)]="userPayment.cpf">    
+                    <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="000.000.000-00" class="payment__input__style" [(ngModel)]="userPayment.cpf">    
                 </div>
             </section>
-            <span class="formPaymentBlock">Adress Infos</span>
-            <section class="adressUserInfos" *ngIf="userPayment.cpf.length > 0">
-                <div class="formInputs">
+            <span class="payment__block">Adress Infos</span>
+            <section class="payment__adress" *ngIf="userPayment.cpf.length > 0">
+                <div class="payment__input">
                     <span>CEP</span>
-                    <input type="text" name="cep" id="cep" maxlength="8" placeholder="00000-000" class="inputStyle" [(ngModel)]="userPayment.cep">
+                    <input type="text" name="cep" id="cep" maxlength="8" placeholder="00000-000" class="payment__input__style" [(ngModel)]="userPayment.cep">
                 </div>
-                <div class="formInputs" *ngIf="userPayment.cep.length > 0">
+                <div class="payment__input" *ngIf="userPayment.cep.length > 0">
                     <span>Street name</span>
-                    <input type="text" name="streeName" id="streetName" class="inputStyle" [(ngModel)]="userPayment.street">
+                    <input type="text" name="streeName" id="streetName" class="payment__input__style" [(ngModel)]="userPayment.street">
                 </div>
-                <div class="formInputs" *ngIf="userPayment.street.length > 0">
+                <div class="payment__input" *ngIf="userPayment.street.length > 0">
                     <span>Number house</span>
-                    <input type="text" name="numberHouse" id="numberHouse" class="inputStyle" [(ngModel)]="userPayment.numberHouse">
+                    <input type="text" name="numberHouse" id="numberHouse" class="payment__input__style" [(ngModel)]="userPayment.numberHouse">
                 </div>
                 </section>
-            <span class="formPaymentBlock">Review products</span>
-            <section class="reviewProducts" *ngIf="userPayment.numberHouse.length > 0">
-                <div class="miniCardReviewProduct" *ngFor="let item of products">
-                    <span class="miniCardReviewProductText">Name: {{item.product.name}}</span>
-                    <span class="miniCardReviewProductText">Itens number: {{item.quant}}</span>
-                    <span class="miniCardReviewProductText">Total value: R$ {{item.product.price * item.quant}},00</span>
+            <span class="payment__block">Review products</span>
+            <section class="payment__review" *ngIf="userPayment.numberHouse.length > 0">
+                <div class="payment__review__card" *ngFor="let item of products">
+                    <span class="payment__review__text">Name: {{item.product.name}}</span>
+                    <span class="payment__review__text">Itens number: {{item.quant}}</span>
+                    <span class="payment__review__text">Total value: R$ {{item.product.price * item.quant}},00</span>
                 </div>
                 <a routerLink="/cart" class="routerLink"><button class="button">Change Product?</button></a>
             </section>
-            <section class="paymentMethod" *ngIf="userPayment.numberHouse.length > 0">
-                <span class="formPaymentBlock">Method payment</span>
+            <section class="payment__method" *ngIf="userPayment.numberHouse.length > 0">
+                <span class="payment__block">Method payment</span>
             </section>
             <button class="button" *ngIf="userPayment.numberHouse.length > 0">Finish purchase</button>
         </section>
     </section>
     <ng-template #DoesntHaveProductInTheCart>
-        <span class="doesntTextProduc">Doesn't have products in your Cart!</span>
-        <span class="doesntTextProduc">Back to products and be happy</span>
+        <span class="payment__doesnt">Doesn't have products in your Cart!</span>
+        <span class="payment__doesnt">Back to products and be happy</span>
         <a routerLink="/products/all"><button class="button">Products</button></a>
     </ng-template>
 </section>

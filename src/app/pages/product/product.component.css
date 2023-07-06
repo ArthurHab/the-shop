@@ -1,4 +1,4 @@
-.productCardInfo{
+.product__card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,42 +10,42 @@
     border-radius: 10px;
 }
 
-.informationsProduct{
+.product__content{
     display: flex;
     flex-direction: column;
     gap: 10px;
     
 }
 
-.imageProduct{
+.product__image{
     height: 200px;
     border-radius: 10px;
 }
 
-.productName{
+.product__name{
     font-size: 1.5rem;
 }
 
-.productPrice{
+.product__price{
     font-size: 2rem;
     font-weight: bold;
 }
 
-.productDescription{
+.product_description{
     font-size: 1.2rem;
 }
 
-.productDontExists{
+.product__text__notfound{
     font-size: 2rem;
 }
 
 @media screen and (min-width: 700px){
-    .productCardInfo{
+    .product__card{
         flex-direction: row;
         padding: 50px;
         gap: 50px;
     }
-    .imageProduct{
+    .product__image{
         height: 300px;
     }
 }

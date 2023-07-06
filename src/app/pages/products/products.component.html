@@ -1,11 +1,11 @@
-<div class="productsContainer">
-    <section class="productsCategories">
-        <span class="categorieTitle">Category</span>
-        <ul class="categorieList">
-            <li *ngFor="let categorie of categories" class="categorieListItem"><a routerLink="/products/{{categorie}}" class="routerLink">{{categorie}}</a></li>
+<div class="products__container">
+    <section class="products__categories">
+        <span class="products__categories__title">Category</span>
+        <ul class="products__categories__list">
+            <li *ngFor="let categorie of categories" class="products__categories__item"><a routerLink="/products/{{categorie}}" class="routerLink">{{categorie}}</a></li>
         </ul>
     </section>
-    <section class="productsContent" >
+    <section class="products__items" >
         <app-product-card *ngFor="let product of products" [product]="product"></app-product-card>
     </section>
 </div>
