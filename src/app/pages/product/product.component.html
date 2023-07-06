@@ -2,7 +2,7 @@
     <img src="{{product.imageUrl}}" alt="" class="product__image">
     <div class="product__content">
         <p class="product__name">{{product.name}}</p>
-        <p class="product__price">R$ {{product.price}},00</p>
+        <p class="product__price text__green">R$ {{product.price}},00</p>
         <p class="product_description">{{product.description}}</p>
         <a routerLink="/cart"><button class="button" (click)="handleClick()">Add to cart</button></a>
     </div>

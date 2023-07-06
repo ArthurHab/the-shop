@@ -1,8 +1,22 @@
 <section class="payment__container">
     <section *ngIf="products.length > 0 ; else DoesntHaveProductInTheCart">
+        
         <section class="payment__form">
+
             <span class="payment__title">Payment</span>
+
+            <span class="payment__block">Review products</span>
+            <section class="payment__review">
+                <div class="payment__review__card" *ngFor="let item of products">
+                    <span class="payment__review__text">Name: {{item.product.name}}</span>
+                    <span class="payment__review__text">Itens number: {{item.quant}}</span>
+                    <span class="payment__review__text">Total value: R$ {{item.product.price * item.quant}},00</span>
+                </div>
+                <a routerLink="/cart" class="routerLink"><button class="button">Change Product?</button></a>
+            </section>
+
             <button class="button" (click)="handleClick()" *ngIf="!showPayment">Let's go</button>
+
             <span class="payment__block">Basic User Infos</span>
             <section class="payment__user" *ngIf="!!showPayment">
                 <div class="payment__input">
@@ -18,6 +32,7 @@
                     <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="000.000.000-00" class="payment__input__style" [(ngModel)]="userPayment.cpf">    
                 </div>
             </section>
+
             <span class="payment__block">Adress Infos</span>
             <section class="payment__adress" *ngIf="userPayment.cpf.length > 0">
                 <div class="payment__input">
@@ -33,24 +48,17 @@
                     <input type="text" name="numberHouse" id="numberHouse" class="payment__input__style" [(ngModel)]="userPayment.numberHouse">
                 </div>
                 </section>
-            <span class="payment__block">Review products</span>
-            <section class="payment__review" *ngIf="userPayment.numberHouse.length > 0">
-                <div class="payment__review__card" *ngFor="let item of products">
-                    <span class="payment__review__text">Name: {{item.product.name}}</span>
-                    <span class="payment__review__text">Itens number: {{item.quant}}</span>
-                    <span class="payment__review__text">Total value: R$ {{item.product.price * item.quant}},00</span>
-                </div>
-                <a routerLink="/cart" class="routerLink"><button class="button">Change Product?</button></a>
-            </section>
             <section class="payment__method" *ngIf="userPayment.numberHouse.length > 0">
+
                 <span class="payment__block">Method payment</span>
             </section>
             <button class="button" *ngIf="userPayment.numberHouse.length > 0">Finish purchase</button>
+
         </section>
     </section>
     <ng-template #DoesntHaveProductInTheCart>
-        <span class="payment__doesnt">Doesn't have products in your Cart!</span>
-        <span class="payment__doesnt">Back to products and be happy</span>
-        <a routerLink="/products/all"><button class="button">Products</button></a>
+            <span class="payment__doesnt">Doesn't have products in your Cart!</span>
+            <span class="payment__doesnt">Back to products and be happy</span>
+            <a routerLink="/products/all"><button class="button">Products</button></a>
     </ng-template>
 </section>

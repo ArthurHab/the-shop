@@ -2,7 +2,7 @@
     <img src="{{product.product.imageUrl}}" alt="" height="50">
     <div class="infoProductCart">
         <span class="productNameCart">Nome: {{product.product.name}}</span>
-        <span class="productPriceCart">Preço: R$ {{product.product.price * product.quant}}</span>
+        <span class="productPriceCart">Preço: <span class="text__green text__bold">R$ {{product.product.price * product.quant}}</span></span>
         <span class="productQuantCart">Quantidade: {{product.quant}}</span>
     </div>
     <div class="infoProductCartButtons">
