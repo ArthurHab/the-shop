@@ -1,16 +1,11 @@
 <nav class="navBar">
     <ul class="routerList">
-        <li class="routerItem"><a routerLink="/" class="router__link text__bold" >Home</a></li>
-        <li class="routerItem"><a routerLink="/products/all" class="router__link text__bold" >Products</a></li>
-        <li class="routerItem"><a routerLink="/about" class="router__link text__bold" >About</a></li>
-        <li class="routerItem"><a routerLink="/contact" class="router__link text__bold" >Contact</a></li>
-        <li class="routerItem"><a routerLink="/cart" class="router__link text__bold" >
-            <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+        <li class="routerItem"><a routerLink="/products/all" routerLinkActive="router__link__activated" class="router__link text__bold" >Products</a></li>
+        <li class="routerItem"><a routerLink="/about" routerLinkActive="router__link__activated" class="router__link text__bold" >About</a></li>
+        <li class="routerItem"><a routerLink="/contact" routerLinkActive="router__link__activated" class="router__link text__bold" >Contact</a></li>
+        <li class="routerItem"><a routerLink="/cart" routerLinkActive="svgCart__router__activated" class="router__link text__bold" >
+        <svg version="1.1" class="svgCart" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
             width="30px" height="30px" viewBox="0 0 32 32" xml:space="preserve">
-       <style type="text/css">
-           .sharpcorners_een{fill:#000000;}
-           .st0{fill:#000000;}
-       </style>
        <path class="sharpcorners_een" d="M10,27h4c0,1.105-0.895,2-2,2S10,28.105,10,27z M23,29c1.105,0,2-0.895,2-2h-4
            C21,28.105,21.895,29,23,29z M30,9H6.819l-1-5H2v2h2.181l4,20H26v-2H9.819l-0.6-3H26L30,9z"/>
        </svg>
@@ -35,7 +30,6 @@
 </nav>
 <section class="menuMobile" *ngIf="showMenu" (click)="closeShowMenu()">
     <ul class="routerMobileMenu">
-        <li class="routerItemMobile"><a routerLink="/" class="routerMobileLink text__bold">Home</a></li>
         <li class="routerItemMobile"><a routerLink="/products/all" class="routerMobileLink text__bold">Products</a></li>
         <li class="routerItemMobile"><a routerLink="/about" class="routerMobileLink text__bold">About</a></li>
         <li class="routerItemMobile"><a routerLink="/contact" class="routerMobileLink text__bold">Contact</a></li>

@@ -58,6 +58,15 @@
     color: red;
 }
 
+.svgCart{
+    .sharpcorners_een{fill:#000000;}
+    .st0{fill:#000000;}
+}
+
+.svgCart__router__activated{
+    .sharpcorners_een{fill:#ff0000;}
+    .st0{fill:#ff0000;}
+}
 
 
 @media screen and (max-width: 600px) {

@@ -42,3 +42,7 @@ body {
 .text__green{
     color: green;
 }
+
+.router__link__activated{
+    color: red;
+}
